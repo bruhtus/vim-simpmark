@@ -26,6 +26,7 @@ use 'bruhtus/vim-simpmark'
 ```vim
 call minpac#add('bruhtus/vim-simpmark')
 ```
+
 ## Usage
 
 There are two command you can use, `SimpMark` and `SimpMarkDel`. `SimpMark` is the command to go to the mark and `SimpMarkDel` is the command to delete a mark.
