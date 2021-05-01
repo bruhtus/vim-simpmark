@@ -15,7 +15,7 @@ endfunction
 
 function! simpmark#gotomark()
 	" only display mark [a-zA-Z], mark ', and mark .
-	marks '.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+	marks '.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\"
 	echo('Mark: ')
 
 	let l:mark = nr2char(getchar())

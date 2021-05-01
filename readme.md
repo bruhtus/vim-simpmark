@@ -7,7 +7,7 @@ Simpmark is a plugin to manage mark in vim. Simpmark was inpired by [stackexchan
 First of all,  simpmark list available mark and then you can press any alphabet according to the mark you want to choose. To make it simple, it's like using command `:marks` first and then using `` ` `` (backtick, a normal mode command) to go to the mark you want. The only difference is that simpmark only list `'`, `.`, and alphabet mark (`[a-zA-Z]`) and doesn't list the number mark. And if the mark doesn't exist, it doesn't give you an error. So you can use simpmark just to check the list of marks.
 
 The improvements are:
-1. It only show `'`, `.`, and alphabet mark rather than all the available mark so that it doesn't take up a lot of screen space. You can check all the available mark using the default `:marks` command.
+1. It only show `'`, `.`, `"`, and alphabet mark rather than all the available mark so that it doesn't take up a lot of screen space. You can check all the available mark using the default `:marks` command.
 2. When go to the mark, the content of the mark appear in the middle of the screen. So you don't have to press `zz` everytime you go to the mark.
 3. You can also delete a mark.
 
