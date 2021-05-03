@@ -8,6 +8,9 @@
 " simple vim mark management
 
 function! simpmark#delete()
+	" only display mark [a-zA-Z], mark ', and mark .
+	marks '.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\"
+	echo('Mark: ')
 	let l:mark = nr2char(getchar())
 	redraw
 	execute "silent! delm " . l:mark
