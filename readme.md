@@ -38,3 +38,17 @@ For example: <br>
 nnoremap <silent> <leader>m :SimpMark<CR>
 nnoremap <silent> dm :SimpMarkDel<CR>
 ```
+
+### Examples
+
+- Simpmark basic command (`SimpMark`)
+
+![simpmark-basic-command](https://gist.github.com/bruhtus/5c62ea993904f958b32a05013ee32cc4/raw/df0d423ece213f773d6dffd0796e59c3eefc29c9/simpmark-basic-command.png)
+
+You can any mark on the list without hitting enter and if mark exist then go to the mark location, if mark doesn't exist then print out `Mark doesn't exist`.
+
+- Simpmark delete command (`SimpMarkDel`)
+
+![simpmark-delete-command](https://gist.github.com/bruhtus/5c62ea993904f958b32a05013ee32cc4/raw/df0d423ece213f773d6dffd0796e59c3eefc29c9/simpmark-del-command.png)
+
+You can delete any mark on the list without hitting enter.
