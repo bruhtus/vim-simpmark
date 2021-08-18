@@ -44,6 +44,15 @@ You can change the marks displayed with `g:simpmark_marks`, the default is:
 let g:simpmark_marks = "'.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" . '\"'
 ```
 
+You can turn off the display marks for `SimpMark` command with:
+```vim
+let g:simpmark_no_display = 1
+```
+and also you can turn off the display marks for `SimpMarkDel` command with:
+```vim
+let g:simpmark_del_no_display = 1
+```
+
 ### Examples
 
 - Simpmark basic command (`SimpMark`)

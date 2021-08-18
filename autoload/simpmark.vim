@@ -8,12 +8,14 @@
 " simple vim mark management
 
 if !exists('g:simpmark_marks')
+  " only display mark [a-zA-Z], mark ', mark ., and mark "
   let g:simpmark_marks = "'.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" . '\"'
 endif
 
 function! simpmark#delete()
-  " only display mark [a-zA-Z], mark ', and mark .
-  execute 'marks ' . g:simpmark_marks
+  if get(g:, 'simpmark_del_no_display') != 1
+    execute 'marks ' . g:simpmark_marks
+  endif
   echo 'Mark: '
   let l:mark = nr2char(getchar())
   echo ''
@@ -22,8 +24,9 @@ function! simpmark#delete()
 endfunction
 
 function! simpmark#gotomark()
-  " only display mark [a-zA-Z], mark ', and mark .
+  if get(g:, 'simpmark_no_display') != 1
     execute 'marks ' . g:simpmark_marks
+  endif
   echo 'Mark: '
 
   let l:mark = nr2char(getchar())
