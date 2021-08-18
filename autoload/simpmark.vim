@@ -35,7 +35,7 @@ function! simpmark#gotomark()
 
   try
     execute "normal! `" . l:mark
-    norm zz
+    norm! zz
   catch
     if get(g:, 'simpmark_no_msg') != 1
       echo "Mark doesn't exist"
