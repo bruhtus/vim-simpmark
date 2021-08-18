@@ -71,3 +71,6 @@ You can any mark on the list without hitting enter and if mark exist then go to 
 ![simpmark-delete-command](https://gist.github.com/bruhtus/5c62ea993904f958b32a05013ee32cc4/raw/df0d423ece213f773d6dffd0796e59c3eefc29c9/simpmark-del-command.png)
 
 You can delete any mark on the list without hitting enter.
+
+## Credits
+- [the_velour_fog's stackexchange answer](https://vi.stackexchange.com/a/9746).
