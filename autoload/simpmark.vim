@@ -16,6 +16,7 @@ function! simpmark#delete()
   execute 'marks ' . g:simpmark_marks
   echo 'Mark: '
   let l:mark = nr2char(getchar())
+  echo ''
   redraw
   execute 'silent! delm ' . l:mark
 endfunction
@@ -26,6 +27,7 @@ function! simpmark#gotomark()
   echo 'Mark: '
 
   let l:mark = nr2char(getchar())
+  echo ''
   redraw
 
   try
