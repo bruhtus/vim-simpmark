@@ -53,6 +53,11 @@ and also you can turn off the display marks for `SimpMarkDel` command with:
 let g:simpmark_del_no_display = 1
 ```
 
+You can turn off message `Mark doesn't exist` with:
+```vim
+let g:simpmark_no_msg = 1
+```
+
 ### Examples
 
 - Simpmark basic command (`SimpMark`)
