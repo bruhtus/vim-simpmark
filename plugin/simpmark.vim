@@ -8,7 +8,7 @@
 " simple vim mark management
 
 if exists('g:loaded_simpmark')
-	finish
+  finish
 endif
 
 let g:loaded_simpmark = 1

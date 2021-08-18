@@ -39,6 +39,11 @@ nnoremap <silent> <leader>m :SimpMark<CR>
 nnoremap <silent> dm :SimpMarkDel<CR>
 ```
 
+You can change the marks displayed with `g:simpmark_marks`, the default is:
+```vim
+let g:simpmark_marks = "'.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" . '\"'
+```
+
 ### Examples
 
 - Simpmark basic command (`SimpMark`)
