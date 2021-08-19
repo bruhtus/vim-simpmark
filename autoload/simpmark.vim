@@ -7,14 +7,12 @@
 " Description:
 " simple vim mark management
 
-if !exists('g:simpmark_marks')
-  " only display mark [a-zA-Z], mark ', mark ., and mark "
-  let g:simpmark_marks = "'.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" . '\"'
-endif
+" only display mark [a-zA-Z], mark ', mark ., and mark "
+let s:simpmark_marks = get(g:, 'simpmark_marks', "'.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" . '\"')
 
 function! simpmark#delete()
   if get(g:, 'simpmark_del_no_display') != 1
-    execute 'marks ' . g:simpmark_marks
+    execute 'marks ' . s:simpmark_marks
   endif
   echo 'Mark: '
   let l:mark = nr2char(getchar())
@@ -25,7 +23,7 @@ endfunction
 
 function! simpmark#gotomark()
   if get(g:, 'simpmark_no_display') != 1
-    execute 'marks ' . g:simpmark_marks
+    execute 'marks ' . s:simpmark_marks
   endif
   echo 'Mark: '
 
